@@ -18,6 +18,8 @@ class PublishStep extends StepComponent
 
     public function submit(){
         Thing::create($this->stateToStore());
+        $this->dispatch('created');
+        // return back()->this can also redirect it;
     }
 
     public function render()

@@ -4,11 +4,11 @@
             <ul class="list-group">
                 <li class="list-group-item d-flex justify-content-between align-items-center">
                     <span class="slate">Title <br>
-                    <span class="small slate-light">...</span></span>
+                    <span class="small slate-light">{{$state['title']}}</span></span>
                 </li>
                 <li class="list-group-item d-flex justify-content-between align-items-center">
                     <span class="slate">Description <br>
-                    <span class="small slate-light">...</span></span>
+                    <span class="small slate-light">{{$state['description']}}</span></span>
                 </li>
               </ul>
             <form wire:submit="submit" class="mt-3" method="POST">

@@ -57,7 +57,7 @@
               </a>
             </li>
             <a class="nav-link slate" aria-current="page" href="{{route('create-thing')}}">
-                Create a client
+                Create a thing
               </a>
             </li>
             <li class="nav-item">

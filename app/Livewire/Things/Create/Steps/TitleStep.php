@@ -8,6 +8,10 @@ use Spatie\LivewireWizard\Components\StepComponent;
 
 class TitleStep extends StepComponent
 {
+    protected $listeners = [
+        'created' => '$refresh'
+    ];
+
     #[Validate('required')]
     public string $title;
 
