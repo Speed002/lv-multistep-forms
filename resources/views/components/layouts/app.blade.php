@@ -56,25 +56,14 @@
                 Dashboard
               </a>
             </li>
-            <li class="nav-item">
-                <a class="nav-link slate" href="">
-                  Company
-                </a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link slate" href="">
-                  Branch
-                </a>
+            <a class="nav-link slate" aria-current="page" href="{{route('create-thing')}}">
+                Create a client
+              </a>
             </li>
             <li class="nav-item">
                 <a class="nav-link slate" href="{{route('two-factor')}}">
                   Enable 2F-Auth
                 </a>
-              </li>
-            <li class="nav-item">
-              <a class="nav-link slate" href="{{route('profile')}}">
-                Profile
-              </a>
             </li>
             <li class="nav-item">
                 <form action="{{route('logout')}}" method="post">

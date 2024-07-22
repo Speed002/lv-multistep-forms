@@ -5,6 +5,7 @@ use App\Http\Controllers\DashboardController;
 use App\Http\Controllers\AuthPagesController;
 use App\Http\Controllers\ProfileController;
 use App\Http\Controllers\TwoFactorController;
+use App\Livewire\Things\Create\CreateThings;
 
 // Routes inside this group require authentication
 Route::middleware(['auth'])->group(function () {
@@ -13,6 +14,8 @@ Route::middleware(['auth'])->group(function () {
     Route::get('/', [DashboardController::class, 'index'])->name('dashboard');
     Route::get('/auth/two-factor', TwoFactorController::class)->name('two-factor');
     Route::get('/profile-information',ProfileController::class)->name('profile');
+    // create
+    Route::get('/things/create', CreateThings::class)->name('create-thing');
 });
 // Routes outside the 'auth' middleware group
 Route::middleware(['guest'])->group(function () {
