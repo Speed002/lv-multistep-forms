@@ -9,13 +9,11 @@
     @vite(['resources/css/app.css', 'resources/js/app.js'])
   </head>
 <body>
-
 <svg xmlns="http://www.w3.org/2000/svg" class="d-none">
     <symbol id="list" viewBox="0 0 16 16">
         <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"/>
     </symbol>
 </svg>
-
 <header class="navbar sticky-top flex-md-nowrap p-1 nav-bg">
     <a class="navbar-brand col-md-3 col-lg-2 me-0 px-3 fs-6" href="#">
         <span class="slate">##</span>
@@ -28,7 +26,6 @@
                 <path fill-rule="evenodd" d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8m8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1"/>
                 </svg><span class="">{{auth()->user()->username}}</span>
         </span>
-
     </a>
     <ul class="navbar-nav flex-row d-md-none">
         <li class="nav-item text-nowrap">
@@ -52,17 +49,22 @@
         <div class="offcanvas-body d-md-flex flex-column p-0 pt-lg-3 overflow-y-auto">
           <ul class="nav flex-column mb-3">
             <li class="nav-item">
-              <a class="nav-link slate" aria-current="page" href="{{route('dashboard')}}">
+              <a class="nav-link" aria-current="page" href="{{route('dashboard')}}">
                 Dashboard
               </a>
             </li>
-            <a class="nav-link slate" aria-current="page" href="{{route('create-thing')}}">
+            <a class="nav-link" aria-current="page" href="{{route('create-thing')}}">
                 Create a thing
               </a>
             </li>
             <li class="nav-item">
-                <a class="nav-link slate" href="{{route('two-factor')}}">
+                <a class="nav-link" href="{{route('two-factor')}}">
                   Enable 2F-Auth
+                </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="{{route('profile')}}">
+                  Profile
                 </a>
             </li>
             <li class="nav-item">

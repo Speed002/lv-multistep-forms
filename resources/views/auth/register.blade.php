@@ -3,23 +3,9 @@
         <form action="{{route('register')}}" method="POST">
             @csrf
             <div class="mb-1">
-                <label for="exampleFormControlInput1" class="form-label slate">First name</label>
-                <input type="text" class="form-control" name="firstname" id="firstname" value="{{old('firstname')}}">
-                @error('firstname')
-                    <small class="text-danger text-xs">{{$message}}</small>
-                @enderror
-            </div>
-            <div class="mb-1">
-                <label for="exampleFormControlInput1" class="form-label slate">Last name</label>
-                <input type="text" class="form-control" name="lastname" id="lastname" value="{{old('lastname')}}">
-                @error('lastname')
-                    <small class="text-danger text-xs">{{$message}}</small>
-                @enderror
-            </div>
-            <div class="mb-1">
-                <label for="exampleFormControlInput1" class="form-label slate">Email address</label>
-                <input type="email" class="form-control" name="email" id="email" value="{{old('email')}}">
-                @error('email')
+                <label for="exampleFormControlInput1" class="form-label slate">Name</label>
+                <input type="text" class="form-control" name="name" id="name" value="{{old('name')}}">
+                @error('name')
                     <small class="text-danger text-xs">{{$message}}</small>
                 @enderror
             </div>
@@ -27,6 +13,13 @@
                 <label for="exampleFormControlInput1" class="form-label slate">Username</label>
                 <input type="text" class="form-control" name="username" id="username" value="{{old('username')}}">
                 @error('username')
+                    <small class="text-danger text-xs">{{$message}}</small>
+                @enderror
+            </div>
+            <div class="mb-1">
+                <label for="exampleFormControlInput1" class="form-label slate">Email address</label>
+                <input type="email" class="form-control" name="email" id="email" value="{{old('email')}}">
+                @error('email')
                     <small class="text-danger text-xs">{{$message}}</small>
                 @enderror
             </div>
